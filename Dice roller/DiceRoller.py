@@ -1,7 +1,26 @@
+#Note: A lot of the comments are in portuguese because this is a university assignment.
+#They will be removed later on.
 import math
+import random
 
-#Starts with 100 dices on a tray all with the value of 1.
-#A force is applied to the tray, and causes the a portion of the dice to be flipped according to it.
-#The amount flipped isn't always the same, there needs to be a probability of there being more or less flipped dices.
-#The value of all dices must them be 
+Dices = []
+for i in range(100):
+    Dices.append(i)
+    Dices[i] = 1 
+
+Times = int(input("Digite o numero de balancos: "))
+
+while True:
+    Force = float(input("Digite a Forca aplicada(Entre 0.1 e 10): "))
+    if Force >= 0.1 and Force <= 10:
+        break
+
+Rolled = (Force/10) * 100
+
+for turn in range(Times):
+    for dice in range(round(Rolled)):
+        Dices[dice] = random.randint(1,6)
+        print(Dices[dice])
+
+
 

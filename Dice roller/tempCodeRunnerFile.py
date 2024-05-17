@@ -1,0 +1,1 @@
+print(Dices[i])
