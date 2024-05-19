@@ -3,12 +3,12 @@
 import math
 import random
 
-Dices = []
+Times = int(input("Digite o numero de balancos: "))
+
+Dices = [1]
 for i in range(100):
     Dices.append(i)
-    Dices[i] = 1 
-
-Times = int(input("Digite o numero de balancos: "))
+    Dices[i] = [1] 
 
 while True:
     Force = float(input("Digite a Forca aplicada(Entre 0.1 e 10): "))
