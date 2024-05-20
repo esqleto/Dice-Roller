@@ -29,9 +29,9 @@ for row in range(100):
         for dice in range(Times):
             Dices[row][dice] = random.randint(1, 6)
             print(Dices[row])
-    else: 
+    else:
         Dices[row] = [1] * Times
 
     writer.writerow(["Dice:" + str(row + 1)] + Dices[row])
-    
+
 output.close()
