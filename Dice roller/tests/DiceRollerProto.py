@@ -17,16 +17,16 @@ while True:
         break
 
 Rolled = round((Force / 10) * 100)
-index = 0
-for row in Dices:
-    for dice in range(Rolled):
-        Dices[index][dice] = random.randint(1, 6)
-    writer.writerow(Dices[index])
-    print(Dices[index])
-    index = index + 1
-output.close()
 
-# for turn in range(Times):
-#    for dice in range(round(Rolled)):
-#        Dices[dice] = random.randint(1,6)
-#        print(Dices[dice])
+for row in range(100):
+    if row < Rolled:
+        for dice in range(Times):
+            Dices[row][dice] = random.randint(1, 6)
+            print(Dices[row])
+    else: 
+        Dices[row] = [1] * Times
+
+    writer.writerow([row])
+    writer.writerow(Dices[row])
+    
+output.close()
