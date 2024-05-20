@@ -18,6 +18,12 @@ while True:
 
 Rolled = round((Force / 10) * 100)
 
+header = ["Dices"]
+for i in range(Times):
+    header += ["balanco:" + str(i + 1)]
+
+writer.writerow(header)
+
 for row in range(100):
     if row < Rolled:
         for dice in range(Times):
@@ -26,7 +32,6 @@ for row in range(100):
     else: 
         Dices[row] = [1] * Times
 
-    writer.writerow([row])
-    writer.writerow(Dices[row])
+    writer.writerow(["Dice:" + str(row + 1)] + Dices[row])
     
 output.close()
