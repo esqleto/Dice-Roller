@@ -5,7 +5,9 @@ import random
 import csv
 
 output = open("CSVArray.csv", "w")
+output_chart = open("SumChart.csv", "w")
 writer = csv.writer(output)
+writer_chart = csv.writer(output_chart)
 
 while True:
     force = float(input("Digite a força aplicada(Entre 0.1 e 10): "))
@@ -51,5 +53,8 @@ for row in range(100):
     writer.writerow(["Dado-" + str(row + 1)] + read[row])
 
 writer.writerow(["|Somas|"] + dice_sum[99])
+
+for i in range(times):
+    writer_chart.writerow(["Soma do balanço:" + str(i + 1)] + [dice_sum[99][i]])
 
 output.close()
