@@ -6,7 +6,7 @@
 
  ## Dependencies
 
- - [`pyenv`](https://github.com/pyenv/pyenv)-Python version manager
+ - [`pyenv`](https://github.com/pyenv/pyenv) - Python version manager
     - [`Python-1.12.3`](https://www.python.org/downloads/) installed
 
 ## Usage
@@ -33,9 +33,9 @@ After this the program will create 2 files one named `CSVArray.csv` and another 
   - How it should look like:
 
     - Top:
-    ![top](https://cdn.discordapp.com/attachments/1243428190660071557/1243428225414205491/image.png?ex=66517046&is=66501ec6&hm=5f9a602e9ec37eb2230b8200941209654c15e9aead523f9b98d05e6d80ffe10d&) 
+       - ![top](https://cdn.discordapp.com/attachments/1243428190660071557/1243428225414205491/image.png?ex=66517046&is=66501ec6&hm=5f9a602e9ec37eb2230b8200941209654c15e9aead523f9b98d05e6d80ffe10d&) 
     - Bottom:
-      ![bottom](https://cdn.discordapp.com/attachments/1243428190660071557/1243428381362749490/image.png?ex=6651706b&is=66501eeb&hm=8d0e47eb61a6ad53c09ab4b55b58fbdcd089df1a62229369f460696fc1ae8dbc&) 
+       - ![bottom](https://cdn.discordapp.com/attachments/1243428190660071557/1243428381362749490/image.png?ex=6651706b&is=66501eeb&hm=8d0e47eb61a6ad53c09ab4b55b58fbdcd089df1a62229369f460696fc1ae8dbc&) 
 
 
 
